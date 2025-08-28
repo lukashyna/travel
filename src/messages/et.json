@@ -1,0 +1,53 @@
+{
+  "app_description": "Lihtne ja mugav veebirakendus, mis võimaldab sul märkida oma lemmikkohti ning ka neid, kuhu sa väga tahaksid minna. Ära viivita ja proovi ise järgi.",
+  "titles": {
+    "add_marker": "Lisa marker",
+    "added_markers": "Lisatud markerid",
+    "add_photo": "Klõpsa siia, et lisada foto",
+    "change_photo": "Klõpsa siia, et muuta fotot",
+    "edit_marker": "Muuda markerit",
+    "empty_list": "Nimekiri on tühi",
+    "delete_marker": "Kas soovid tõesti lemmikkoha kustutada?",
+    "select_location": "Vali kaardil koht, kuhu marker lisada.",
+    "unknown_user": "Tundmatu kasutaja",
+    "error":"Ups! Midagi läks valesti."
+  },
+  "button": {
+    "start": "Alusta",
+    "login": "Logi sisse",
+    "registration": "Loo konto",
+    "confirm": "Kinnita",
+    "cancel": "Tühista",
+    "save": "Salvesta",
+    "loading": "Laadimine...",
+    "logout": "Logi välja",
+    "home":"Tagasi avalehele"
+  },
+  "label": {
+    "email": "E-post",
+    "password": "Parool",
+    "name": "Nimi",
+    "location": "Asukoht",
+    "description": "Kirjeldus"
+  },
+  "placeholder": {
+    "password": "Sisesta oma parool",
+    "name": "Sisesta oma nimi"
+  },
+  "errors": {
+    "general": "Midagi läks valesti",
+    "email_format": "Vale e-posti formaat",
+    "email_req": "E-post on kohustuslik",
+    "password_req": "Parool on kohustuslik",
+    "password_format": "Parool peab olema vähemalt 6 tähemärki pikk",
+    "name_format": "Nimi peab olema vähemalt 2 tähemärki pikk",
+    "name_req": "Nimi on kohustuslik",
+    "title_req": "Pealkiri on kohustuslik",
+    "description_req": "Kirjeldus on kohustuslik",
+    "file_size": "Fail on liiga suur (max 70KB)"
+  },
+  "metadata": {
+    "description": "Lihtne viis IT-asukohtade jagamiseks"
+  },
+  "not_found":"Me ei leidnud otsitud lehte. Ära muretse — meie tiim juba töötab lahenduse kallal. Seni saad naasta avalehele või võtta ühendust meie tugimeeskonnaga. Täname kannatlikkuse eest!"
+}

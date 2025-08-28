@@ -1,0 +1,53 @@
+{
+  "app_description": "A simple and convenient web application that allows you to mark your favorite places, as well as those you would really like to visit. So don't hesitate and try it yourself.",
+  "titles": {
+    "add_marker": "Add marker",
+    "added_markers": "Added markers",
+    "add_photo": "Click here to add a photo",
+    "change_photo": "Click here to change the photo",
+    "edit_marker": "Edit marker",
+    "empty_list": "The list is empty",
+    "delete_marker": "Do you really want to delete the favorite place?",
+    "select_location": "Select a place on the map to add a marker.",
+    "unknown_user": "Unknown user",
+    "error":"Oops! Something went wrong."
+  },
+  "button": {
+    "start": "Get started",
+    "login": "Login",
+    "registration": "Create account",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "logout": "Logout", 
+    "home":"Back to Home"
+  },
+  "label": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "location": "Location",
+    "description": "Description"
+  },
+  "placeholder": {
+    "password": "Enter your password",
+    "name": "Enter your name"
+  },
+  "errors": {
+    "general": "Something went wrong",
+    "email_format": "Invalid email format",
+    "email_req": "Email is required",
+    "password_req": "Password is required",
+    "password_format": "Password must be at least 6 characters long",
+    "name_format": "Name must be at least 2 characters long",
+    "name_req": "Name is required",
+    "title_req": "Title is required",
+    "description_req": "Description is required",
+    "file_size": "File is too large (max 70KB)"
+  },
+  "metadata": {
+    "description": "A simple way to share IT locations"
+  },
+  "not_found":"We couldn’t find the page you’re looking for. Don’t worry — our team is working on fixing it. In the meantime, you can return to the homepage or reach out to our support team. Thanks for your patience!"
+}
