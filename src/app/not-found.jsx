@@ -11,7 +11,6 @@ const NotFound = () => {
                 {t('titles.error')}
             </h2>
             <p className="text-white-600 mb-8 max-w-2xl">{t('not_found')}</p>
-
             <Button to="/">{t('button.home')}</Button>
         </section>
     );

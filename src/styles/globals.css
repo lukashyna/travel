@@ -60,4 +60,5 @@ body {
 .mapboxgl-popup-close-button{
   font-size: 30px;
   padding: 10px;
+  color: #2C2C2C;
 }
