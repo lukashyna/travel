@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => (
         <section className="flex-1">
             <Image
                 className="h-full w-full object-cover"
-                src="/img/static-map.png"
+                src="/assets/img/static-map.png"
                 width={24}
                 height={24}
                 alt="Static Map"

@@ -10,7 +10,7 @@ const Home = () => {
             <div className="text-center">
                 <Image
                     className="mb-6 inline"
-                    src="/img/map-pin.svg"
+                    src="/assets/img/map-pin.svg"
                     width={24}
                     height={24}
                     alt="pin"

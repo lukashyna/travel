@@ -15,7 +15,7 @@ const WithStaticMapLayout = ({
             <section className="relative hidden flex-1 md:flex">
                 <Image
                     className="h-full w-full object-cover"
-                    src="/img/static-map.png"
+                    src="/assets/img/static-map.png"
                     fill
                     sizes="50vw"
                     alt="Static Map"
