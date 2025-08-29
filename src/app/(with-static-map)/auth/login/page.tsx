@@ -1,10 +1,10 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import useAuth from '@/app/hooks/useAuth';
-import useMutation from '@/app/hooks/useMutation';
-import LoginForm from '@/app/components/Auth/LoginForm/LoginForm';
-import { LoginData } from '@/app/types/auth';
+import useAuth from '@/hooks/useAuth';
+import useMutation from '@/hooks/useMutation';
+import LoginForm from '@/components/Auth/LoginForm/LoginForm';
+import { LoginData } from '@/types/auth';
 
 const LoginPage = () => {
     const router = useRouter();

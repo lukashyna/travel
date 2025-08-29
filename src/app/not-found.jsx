@@ -1,7 +1,5 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import IButton from '@/app/components/IButton/IButton';
+import Button from '@/components/Button/Button';
 
 const NotFound = () => {
     const t = useTranslations();
@@ -14,7 +12,7 @@ const NotFound = () => {
             </h2>
             <p className="text-white-600 mb-8 max-w-2xl">{t('not_found')}</p>
 
-            <IButton to="/">{t('button.home')}</IButton>
+            <Button to="/">{t('button.home')}</Button>
         </section>
     );
 };

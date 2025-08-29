@@ -1,10 +1,10 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import useAuth from '@/app/hooks/useAuth';
-import useMutation from '@/app/hooks/useMutation';
-import RegistrationForm from '@/app/components/Auth/RegistrationForm/RegistrationForm';
-import { RegisterData } from '@/app/types/auth';
+import useAuth from '@/hooks/useAuth';
+import useMutation from '@/hooks/useMutation';
+import RegistrationForm from '@/components/Auth/RegistrationForm/RegistrationForm';
+import { RegisterData } from '@/types/auth';
 
 const RegisterPage = () => {
     const router = useRouter();

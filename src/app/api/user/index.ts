@@ -1,4 +1,4 @@
-import axiosInstance from '@/app/config/axiosConfig';
+import axiosInstance from '@/config/axiosConfig';
 import { AxiosResponse } from 'axios';
 
 interface LoginBody {

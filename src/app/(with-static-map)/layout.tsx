@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import LanguageSwitcher from '../components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from '../../components/LanguageSwitcher/LanguageSwitcher';
 
 const WithStaticMapLayout = ({
     children,
