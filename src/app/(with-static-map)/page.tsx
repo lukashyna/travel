@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import IButton from '@/app/components/IButton/IButton';
+import Button from '@/components/Button/Button';
 
 const Home = () => {
     const t = useTranslations();
@@ -14,10 +14,11 @@ const Home = () => {
                     width={24}
                     height={24}
                     alt="pin"
+                    fetchPriority="high"
                 />
                 <h1 className="mb-7 text-4xl font-bold">IT traveler</h1>
                 <p className="mb-11 leading-6">{t('app_description')}</p>
-                <IButton to="/auth/registration">{t('button.start')}</IButton>
+                <Button to="/auth/registration">{t('button.start')}</Button>
             </div>
         </>
     );

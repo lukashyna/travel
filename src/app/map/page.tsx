@@ -3,16 +3,23 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { useTranslations } from 'next-intl';
+import dynamic from 'next/dynamic';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import useMutation from '../hooks/useMutation';
-import useModal from '../hooks/useModal';
-import useMapbox from '../hooks/useMapbox';
-import FavoritePlaces from '@/app/components/FavoritePlaces/FavoritePlaces';
-import PlaceModal from '@/app/components/PlaceModal/PlaceModal';
-import UserInfo from '@/app/components/UserInfo/UserInfo';
+import useMutation from '@/hooks/useMutation';
+import useModal from '@/hooks/useModal';
+import useMapbox from '@/hooks/useMapbox';
+import FavoritePlaces from '@/components/FavoritePlaces/FavoritePlaces';
+import PlaceModal from '@/components/PlaceModal/PlaceModal';
+import UserInfo from '@/components/UserInfo/UserInfo';
+import Loading from '@/components/Loading/Loading';
 import { addFavoritePlace, getFavoritePlaces } from '@/app/api/favorite-places';
 import { mapSettings } from './settings';
-import { Place, NewPlaceForm } from '../types/place';
+import { Place, NewPlaceForm } from '../../types/place';
+
+const MapView = dynamic(() => import('../../components/MapView/MapView'), {
+    ssr: false,
+    loading: () => <Loading />,
+});
 
 mapboxgl.accessToken = mapSettings.apiToken;
 
@@ -107,12 +114,7 @@ const MapPage = () => {
                     onSubmit={addPlace}
                 />
             </div>
-            <div className="h-full w-full">
-                <div
-                    ref={mapContainer}
-                    className="relative h-full w-full"
-                ></div>
-            </div>
+            <MapView containerRef={mapContainer} />
         </main>
     );
 };

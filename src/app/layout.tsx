@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
 
-import './globals.css';
+import '../styles/globals.css';
 
-import { AuthProvider } from '@/app/context/AuthProvider';
+import { AuthProvider } from '@/context/AuthProvider';
 
 const geistSans = Geist({
     subsets: ['latin'],
@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
 });
 
-export async function generateMetadata(): Promise<Metadata> {
+export const generateMetadata = async (): Promise<Metadata> => {
     const locale = await getLocale();
 
     const metadataByLocale = {
@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
         ...metadata,
         authors: [{ name: 'IT Traveler' }],
         generator: 'Next.js',
-        metadataBase: new URL('https://travel.up.railway.app'),
+        metadataBase: new URL('https://travel-production-6248.up.railway.app/'),
         robots: {
             index: true,
             follow: true,
@@ -73,7 +73,7 @@ export async function generateMetadata(): Promise<Metadata> {
             description: metadata.description,
         },
     };
-}
+};
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
     const locale = await getLocale();

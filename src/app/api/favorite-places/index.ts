@@ -1,5 +1,5 @@
-import axiosInstance from '@/app/config/axiosConfig';
-import { Place, PlaceWithId } from '@/app/types/place';
+import axiosInstance from '@/config/axiosConfig';
+import { Place, PlaceWithId } from '@/types/place';
 
 const BASE_PLACES_URL = '/points';
 
